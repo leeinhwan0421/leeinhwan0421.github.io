@@ -3,3 +3,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
+:root {
+	--font-main: "Pretendard Variable", Pretendard, "Noto Sans KR", sans-serif;
+	--primary-color: #17DCDC;
+	--navbar-dark-text: #FFFFFF;
+	--navbar-light-text: #181818;
+}
+
+body {
+	font-family: var(--font-main) !important;
+}
+
+.custom-navbar {
+    /*
+        스크롤 내리기 이전
+    */
+	transition: all 0.4s ease-in-out;
+	background-color: transparent !important;
+	border-bottom: 1px solid transparent !important;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+
+	.navbar-brand {
+		color: var(--navbar-dark-text) !important;
+		transition: color 0.3s ease;
+	}
+
+	.custom-link {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--navbar-dark-text) !important;
+		transition: all 0.25s ease;
+
+		&:hover {
+			color: var(--primary-color) !important;
+			transform: translateY(-1px);
+		}
+	}
+
+	.navbar-toggler {
+		border: none !important;
+		padding: 0.25rem;
+		
+		&:focus {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+		}
+	}
+
+	/*
+        스크롤 내린 상태
+    */
+	&.navbar-scrolled {
+		background-color: rgba(255, 255, 255, 0.95) !important;
+		border-bottom: 1px solid #D5D5D5 !important;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+
+		.navbar-brand {
+			color: #000000 !important;
+		    transition: color 0.3s ease;
+		}
+
+		.custom-link {
+			font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--navbar-light-text) !important;
+            transition: all 0.25s ease;
+
+            &:hover {
+                color: var(--primary-color) !important;
+                transform: translateY(-1px);
+            }
+		}
+
+        .navbar-toggler {
+            border: none !important;
+            padding: 0.25rem;
+            
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+            .navbar-toggler-icon {
+			    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+            }
+        }
+	}
+}
