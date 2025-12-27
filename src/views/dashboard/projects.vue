@@ -1,5 +1,5 @@
 <template>
-	<section id="projects" class="py-5 bg-white">
+	<section id="projects" class="py-5 bg-light projects">
 		<div class="container py-5">
 			<div class="text-center mb-5">
 				<h2 class="fw-bold display-5">{{ $t('projects.title') }}</h2>
@@ -7,12 +7,12 @@
 			</div>
 
 			<div class="d-flex justify-content-center align-items-center mb-5">
-				<div class="form-check form-switch d-flex align-items-center gap-5">
-					<label class="form-check-label fw-bold me-2" for="projectFilter">
+				<div class="form-check form-switch d-flex align-items-center gap-2" style="padding-left: 0 !important;">
+					<label class="form-check-label fw-bold" for="projectFilter">
 						{{ $t('projects.focusMajor') }}
 					</label>
 					<input 
-						class="form-check-input custom-switch-input" 
+						class="form-check-input switch-major" 
 						type="checkbox" 
 						role="switch" 
 						id="projectFilter" 
@@ -23,21 +23,27 @@
 
 			<div class="row g-4">
 				<div v-for="project in filteredProjects" :key="project.id" class="col-lg-6">
-					<div class="project-card border rounded-3 overflow-hidden shadow-sm h-100" @click="openProject(project)">
-						<div class="project-img-wrapper">
-							<img :src="getThumbnail(project.id)" class="img-fluid" :alt="project.title" @error="handleImageError">
+					<div class="project-card border rounded-3 overflow-hidden h-100" @click="openProject(project)">
+						<div class="project-img-wrapper border-bottom">
+							<img :src="getThumbnail(project.id)" class="img-fluid" :alt="project.title">
 							<div class="project-overlay">
 								<span class="btn btn-outline-light px-4">{{ $t('projects.details') }}</span>
 							</div>
 						</div>
 
 						<div class="p-4 text-start">
-							<div class="d-flex justify-content-between align-items-start mb-2">
+							<div class="d-flex justify-content-between align-items-start mb-0">
 								<h4 class="fw-bold mb-0">{{ project.title }}</h4>
-								<span class="badge bg-secondary">{{ project.period }}</span>
+								<span 
+									class="badge" 
+									:style="{ backgroundColor: project.featured ? '#FF4D4D' : '#DF6464' }"
+								>
+									{{ project.period }}
+								</span>
 							</div>
-							<p class="text-primary small mb-3 fw-bold">{{ project.category }}</p>
-							<p class="text-muted small mb-4">{{ project.shortDesc }}</p>
+							<p class="text-secondary small mb-3 fw-bold">{{ project.category }}</p>
+
+							<p class="text-muted small mb-3 project-description">{{ project.shortDesc }}</p>
 							
 							<div class="d-flex flex-wrap gap-2">
 								<span v-for="tag in project.tags" :key="tag" class="badge bg-light text-dark border-0">
@@ -97,52 +103,4 @@ const closeProject = () => {
 const getThumbnail = (id) => {
 	return new URL(`../../assets/projects/${id}/thumbnail.png`, import.meta.url).href;
 };
-
 </script>
-
-<style lang="scss" scoped>
-.form-check-label {
-	font-size: 1.1rem;
-	cursor: pointer;
-	user-select: none;
-}
-
-.custom-switch-input {
-	width: 3rem !important;
-	height: 1.5rem !important;
-	cursor: pointer;
-	
-	&:checked {
-		background-color: #000;
-		border-color: #000;
-	}
-}
-
-.project-card {
-	cursor: pointer;
-	transition: all 0.3s ease;
-	&:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
-		.project-overlay { opacity: 1; }
-	}
-}
-
-.project-img-wrapper {
-	position: relative;
-	aspect-ratio: 16 / 9;
-	overflow: hidden;
-	.project-overlay {
-		position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-		background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center;
-		opacity: 0; transition: opacity 0.3s ease;
-	}
-}
-
-.divider {
-	width: 50px;
-	height: 3px;
-	background-color: #000;
-	opacity: 1;
-}
-</style>
