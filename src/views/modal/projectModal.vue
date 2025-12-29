@@ -52,14 +52,14 @@
 							</div>
 						</section>
 
-						<section class="mb-5">
+						<section v-if="pdfUrl" class="mb-5">
 							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.presentation') }}</h4>
 							<div class="pdf-container border rounded-2 overflow-hidden">
 								<div class="ratio ratio-16x9">
-									<iframe :src="getPdfUrl(project.id)" frameborder="0"></iframe>
+									<iframe :src="pdfUrl" frameborder="0"></iframe>
 								</div>
 								<div class="p-2 bg-light text-end border-top">
-									<a :href="getPdfUrl(project.id)" target="_blank" class="btn btn-sm btn-dark">
+									<a :href="pdfUrl" target="_blank" class="btn btn-sm btn-dark">
 										<i class="bi bi-file-earmark-pdf me-1"></i>{{ $t('projectModal.popUp') }}
 									</a>
 								</div>
@@ -73,10 +73,11 @@
 							</p>
 						</section>
 
-						<section class="mb-2">
+						<section v-if="project.links.youtube || project.links.github" class="mb-2">
 							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.browsing.title') }}</h4>
 							<div class="d-flex flex-column flex-sm-row gap-3">
 								<a 
+									v-if="project.links.youtube"
 									:href="project.links.youtube" 
 									target="_blank" 
 									class="btn btn-outline-danger flex-fill d-flex align-items-center justify-content-center py-3 fw-bold transition-hover"
@@ -84,7 +85,9 @@
 									<i class="bi bi-play-btn-fill fs-5 me-2"></i> 
 									{{ $t('projectModal.browsing.video') }}
 								</a>
+								
 								<a 
+									v-if="project.links.github"
 									:href="project.links.github" 
 									target="_blank" 
 									class="btn btn-dark flex-fill d-flex align-items-center justify-content-center py-3 fw-bold transition-hover"
@@ -106,6 +109,8 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+
 const props = defineProps(['project']);
 defineEmits(['close']);
 
@@ -113,7 +118,17 @@ const getThumbnail = (id) => {
 	return new URL(`../../assets/projects/${id}/banner.png`, import.meta.url).href;
 };
 
-const getPdfUrl = (id) => {
-	return new URL(`../../assets/projects/${id}/summary.pdf`, import.meta.url).href;
-};
+const pdfUrl = computed(() => {
+	const projectId = props.project?.id;
+
+	if (!projectId || !props.project.hasPdf) {
+		return null;
+	}
+
+	try {
+		return new URL(`../../assets/projects/${projectId}/summary.pdf`, import.meta.url).href;
+	} catch (e) {
+		return null;
+	}
+});
 </script>

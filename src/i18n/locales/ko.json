@@ -72,6 +72,7 @@
 			{
 				"id": "virus-striker",
                 "featured": true,
+				"hasPdf": true,
 				"title": "Virus Striker",
 				"period": "2021.04 - 2021.05",
 				"category": "DirectX 9",
@@ -97,6 +98,141 @@
 				"links": {
 					"github": "https://github.com/leeinhwan0421/VIRUS_STRIKER",
 					"youtube": "https://www.youtube.com/watch?v=5EcX5imVGHo"
+				}
+			},
+			{
+				"id": "corona-striker",
+                "featured": false,
+				"hasPdf": true,
+				"title": "Corona Striker",
+				"period": "2022.03 - 2022.04",
+				"category": "Unity",
+				"shortDesc": "",
+				"tags": ["Unity", "2D"],
+				"details": {
+					"description": "",
+					"specs": {
+						"environment": "",
+						"members": "",
+						"role": ""
+					},
+					"keyFeatures": [
+						"",
+						""
+					],
+					"review": ""
+				},
+				"links": {
+					"github": "",
+					"youtube": ""
+				}
+			},
+			{
+				"id": "samchuk-adventure",
+                "featured": true,
+				"hasPdf": true,
+				"title": "삼척 어드벤쳐",
+				"period": "2022.06 - 2022.08",
+				"category": "Unity",
+				"shortDesc": "",
+				"tags": ["Unity", "2D", "URP"],
+				"details": {
+					"description": "",
+					"specs": {
+						"environment": "",
+						"members": "",
+						"role": ""
+					},
+					"keyFeatures": [
+						"",
+						""
+					],
+					"review": ""
+				},
+				"links": {
+					"github": "",
+					"youtube": ""
+				}
+			},
+			{
+				"id": "lowpoly-battlefield",
+                "featured": false,
+				"hasPdf": false,
+				"title": "LowPoly Battlefield",
+				"period": "2024.05 - 2024.06",
+				"category": "Unity",
+				"shortDesc": "",
+				"tags": ["Unity", "3D", "URP"],
+				"details": {
+					"description": "",
+					"specs": {
+						"environment": "",
+						"members": "",
+						"role": ""
+					},
+					"keyFeatures": [
+						"",
+						""
+					],
+					"review": ""
+				},
+				"links": {
+					"github": "",
+					"youtube": ""
+				}
+			},
+			{
+				"id": "twin-travelers",
+                "featured": true,
+				"hasPdf": true,
+				"title": "Twin Travelers",
+				"period": "2024.09 - 2024.12",
+				"category": "Unity",
+				"shortDesc": "",
+				"tags": ["Unity", "2D", "URP", "Multiplayer"],
+				"details": {
+					"description": "",
+					"specs": {
+						"environment": "",
+						"members": "",
+						"role": ""
+					},
+					"keyFeatures": [
+						"",
+						""
+					],
+					"review": ""
+				},
+				"links": {
+					"github": "",
+					"youtube": ""
+				}
+			},
+			{
+				"id": "sokoland",
+                "featured": true,
+				"hasPdf": true,
+				"title": "Sokoland",
+				"period": "2025.1 - 2025.3",
+				"category": "Unity",
+				"shortDesc": "",
+				"tags": ["Unity", "3D", "URP"],
+				"details": {
+					"description": "",
+					"specs": {
+						"environment": "",
+						"members": "",
+						"role": ""
+					},
+					"keyFeatures": [
+						"",
+						""
+					],
+					"review": ""
+				},
+				"links": {
+					"github": "",
+					"youtube": ""
 				}
 			}
 		]

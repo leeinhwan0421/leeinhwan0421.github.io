@@ -36,7 +36,7 @@
 								<h4 class="fw-bold mb-0">{{ project.title }}</h4>
 								<span 
 									class="badge" 
-									:style="{ backgroundColor: project.featured ? '#FF4D4D' : '#DF6464' }"
+									:style="{ backgroundColor: project.featured ? '#FF4D4D' : '#828282' }"
 								>
 									{{ project.period }}
 								</span>
