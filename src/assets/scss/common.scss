@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
 		font-size: 0.85rem;
 		color: var(--global-light-gray-color);
 		margin-bottom: 0;
-		letter-spacing: -0.01em;
+		letter-spacing: -0.03em;
 	}
 }
 
@@ -407,10 +407,6 @@ body::-webkit-scrollbar {
 			background: rgba(0, 0, 0, 0.7); display: flex; align-items: center; justify-content: center;
 			opacity: 0; transition: opacity 0.3s ease;
 		}
-	}
-
-	.project-description {
-		text-align: justify; 
 	}
 }
 

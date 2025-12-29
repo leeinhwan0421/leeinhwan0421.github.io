@@ -17,7 +17,7 @@
 					<div class="container-fluid px-4 px-lg-5 py-0 mt-5 mb-3">
 						<section class="mb-5">
 							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.description') }}</h4>
-							<p class="text-secondary leading-relaxed" style="white-space: pre-line; text-align: justify;">
+							<p class="text-secondary leading-relaxed" style="white-space: pre-line;">
 								{{ project.details.description }}
 							</p>
 						</section>
@@ -68,7 +68,7 @@
 
 						<section class="mb-5">
 							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.review') }}</h4>
-							<p class="text-secondary leading-relaxed" style="white-space: pre-line; text-align: justify;">
+							<p class="text-secondary leading-relaxed" style="white-space: pre-line;">
 								{{ project.details.review }}
 							</p>
 						</section>
