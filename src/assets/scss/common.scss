@@ -468,3 +468,16 @@ body::-webkit-scrollbar {
 		background: #525659;
 	}
 }
+
+/*
+	experience 스타일 (@/views/dashboard/experience.vue)
+*/
+.experience {
+	.divider {
+		width: 50px;
+		height: 3px;
+		background-color: var(--global-black-color);
+		opacity: 1;
+		border: none;
+	}
+}
