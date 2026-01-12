@@ -55,7 +55,7 @@
 						<section v-if="pdfUrl" class="mb-5">
 							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.presentation') }}</h4>
 							
-							<div class="d-none d-md-block pdf-container border rounded-2 overflow-hidden">
+							<div v-if="isDesktop" class="d-none d-md-block pdf-container border rounded-2 overflow-hidden">
 								<div class="ratio ratio-16x9">
 									<iframe :src="pdfUrl" frameborder="0"></iframe>
 								</div>
@@ -120,10 +120,25 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed, ref, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps(['project']);
 defineEmits(['close']);
+
+const isDesktop = ref(false);
+
+const checkScreenSize = () => {
+	isDesktop.value = window.innerWidth >= 768;
+};
+
+onMounted(() => {
+	checkScreenSize();
+	window.addEventListener('resize', checkScreenSize);
+});
+
+onUnmounted(() => {
+	window.removeEventListener('resize', checkScreenSize);
+});
 
 const getThumbnail = (id) => {
 	return new URL(`../../assets/projects/${id}/banner.png`, import.meta.url).href;
