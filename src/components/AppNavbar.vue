@@ -49,9 +49,9 @@ const { locale } = useI18n();
 
 const menuList = [
 	{ title: 'About me', id: 'about' },
+	{ title: 'Awards', id: 'awards' },
 	{ title: 'Skills', id: 'skills' },
-	{ title: 'Projects', id: 'projects' },
-	{ title: 'Experience', id: 'experience' }
+	{ title: 'Projects', id: 'projects' }
 ];
 
 const isScrolled = ref(false);

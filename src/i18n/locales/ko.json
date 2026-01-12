@@ -25,6 +25,41 @@
 		}
 	},
 
+	"awards": {
+		"title": "AWARDS",
+		"list": [
+			{
+				"date": "2022.09",
+				"title": "전국기능경기대회 게임개발 은상",
+				"organization": "국제기능올림픽대회 한국위원회",
+				"description": "2D 로컬 멀티플레이어 퍼즐 플랫포머 게임을 완성도 있게 개발하여 높은 평가를 받아 입상했습니다."
+			},
+			{
+				"date": "2022.09",
+				"title": "유니티 후원상",
+				"organization": "유니티테크놀로지스 코리아",
+				"description": "전국기능경기대회에서 유니티 엔진을 활용한 완성도 있는 게임을 제작하여 수상하였습니다."
+			},
+			{
+				"date": "2022.04",
+				"title": "지방기능경기대회 게임개발 금상",
+				"organization": "경기도기능경기위원회",
+				"description": "2D 종스크롤 액션 슈팅 게임을 완성도 있게 개발하여 높은 평가를 받아 입상했습니다."
+			},
+			{
+				"date": "2021.06",
+				"title": "웹케시그룹 제 1회 특성화고 장학금",
+				"organization": "웹케시그룹, 전자신문, 한국중등교장협의회",
+				"description": "특성화고 재학생 가운데 학업 성적 및 재능이 우수한 학생으로 선발되어 장학금을 수여받았습니다."
+			},
+			{
+				"date": "2021.04",
+				"title": "지방기능경기대회 게임개발 동상",
+				"organization": "경기도기능경기위원회, 경기도교육감",
+				"description": "2D 퍼즐 아케이드 게임을 완성도 있게 개발하여 높은 평가를 받아 입상했습니다."
+			}
+		]
+	},
 
 	"skills": {
 		"title": "SKILLS",
@@ -56,9 +91,38 @@
 		"sub": {
 			"title": "보조 및 기타 기술",
 			"items": [
-				{ "name": "C++", "desc": "스마트 포인터 활용 및 DX9 API 기능 구현 경험" },
-				{ "name": "Database & Server", "desc": "MySQL 쿼리 최적화 및 Spring Boot 백엔드 연동 협업 경험" },
-				{ "name": "Tools", "desc": "Git / Plastic SCM 활용 협업 및 Vue.js 프론트엔드 개발 경험" }
+				{ 
+					"name": "C++", 
+					"desc": "스마트 포인터 활용 및 DX9 API 기능 구현 경험" 
+				},
+				{ 
+					"name": "Database & Server", 
+					"desc": "MySQL 쿼리 최적화 및 Spring Boot 백엔드 연동 협업 경험" 
+				},
+				{ 
+					"name": "Tools", 
+					"desc": "Git / Plastic SCM 활용 협업 및 Vue.js 프론트엔드 개발 경험" 
+				}
+			]
+		},
+		"certifications": {
+			"title": "자격증",
+			"items": [
+				{ 
+					"name": "Unity Associate : Game Developer", 
+					"organization": "Unity Technologies",
+					"date": "2022.10" 
+				},
+				{ 
+					"name": "정보처리기능사", 
+					"organization": "한국산업인력공단",
+					"date": "2022.05" 
+				},
+				{ 
+					"name": "컴퓨터그래픽스운용기능사", 
+					"organization": "한국산업인력공단",
+					"date": "2022.05" 
+				}
 			]
 		}
 	},
@@ -274,9 +338,5 @@
 			"video": "플레이 영상",
 			"source": "소스 코드"
 		}
-	},
-
-	"experience": {
-		"title": "EXPERIENCE"
 	}
 }
