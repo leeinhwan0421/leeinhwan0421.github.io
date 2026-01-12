@@ -52,32 +52,36 @@
                             </div>
                         </section>
 
-                        <section v-if="pdfUrl" class="mb-5">
-                            <h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.presentation') }}</h4>
-                            
-                            <div class="pdf-container border rounded-2 overflow-hidden bg-white">
-                                <div v-if="showPdf" class="ratio ratio-16x9">
-                                    <iframe :src="pdfUrl" frameborder="0"></iframe>
-                                </div>
+						<section v-if="pdfUrl" class="mb-5">
+							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.presentation') }}</h4>
+							
+							<div class="pdf-container border rounded-2 overflow-hidden bg-white">
+								<div v-if="showPdf" class="ratio ratio-16x9">
+									<iframe :src="pdfUrl" frameborder="0"></iframe>
+								</div>
 
-                                <div v-else class="ratio ratio-16x9 d-flex align-items-center justify-content-center flex-column text-center bg-light p-4">
-                                    <i class="bi bi-file-earmark-pdf fs-1 text-danger mb-3"></i>
-                                    <h5 class="fw-bold text-secondary mb-2">{{ $t('projectModal.presentation') }} {{ $t('projectModal.presentationPreview') }}</h5>
-                                    <p class="text-muted small mb-4">
-                                        {{ $t('projectModal.presentationDescription') }}
-                                    </p>
-                                    <button class="btn btn-outline-dark px-4 py-2 fw-bold" @click="showPdf = true">
-                                        <i class="bi bi-eye-fill me-2"></i>{{ $t('projectModal.presentationLoad') }}
-                                    </button>
-                                </div>
+								<div v-else class="ratio ratio-16x9">
+									<div class="d-flex align-items-center justify-content-center flex-column text-center bg-light w-100 h-100 p-4">
+										<i class="bi bi-file-earmark-pdf fs-1 text-danger mb-3"></i>
+										<h5 class="fw-bold text-secondary mb-2">
+											{{ $t('projectModal.presentation') }} {{ $t('projectModal.presentationPreview') }}
+										</h5>
+										<p class="text-muted small mb-4">
+											{{ $t('projectModal.presentationDescription') }}
+										</p>
+										<button class="btn btn-outline-dark px-4 py-2 fw-bold" @click="showPdf = true">
+											<i class="bi bi-eye-fill me-2"></i>{{ $t('projectModal.presentationLoad') }}
+										</button>
+									</div>
+								</div>
 
-                                <div class="p-2 bg-light text-end border-top">
-                                    <a :href="pdfUrl" target="_blank" class="btn btn-sm btn-dark">
-                                        <i class="bi bi-file-earmark-pdf me-1"></i>{{ $t('projectModal.popUp') }}
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
+								<div class="p-2 bg-light text-end border-top">
+									<a :href="pdfUrl" target="_blank" class="btn btn-sm btn-dark">
+										<i class="bi bi-file-earmark-pdf me-1"></i>{{ $t('projectModal.popUp') }}
+									</a>
+								</div>
+							</div>
+						</section>
 
                         <section class="mb-5">
                             <h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.review') }}</h4>
