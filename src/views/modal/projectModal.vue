@@ -54,13 +54,24 @@
 
 						<section v-if="pdfUrl" class="mb-5">
 							<h4 class="fw-bold border-bottom pb-2 mb-3">{{ $t('projectModal.presentation') }}</h4>
+							
 							<div class="pdf-container border rounded-2 overflow-hidden">
-								<div class="ratio ratio-16x9">
+								<div class="ratio ratio-16x9 d-none d-md-block">
 									<iframe :src="pdfUrl" frameborder="0"></iframe>
 								</div>
+
+								<div class="d-md-none p-5 text-center bg-light">
+									<i class="bi bi-phone-landscape fs-1 text-secondary"></i>
+									<p class="mt-3 mb-0 text-muted">
+										{{ $t('projectModal.mobilePdfDesc') }}
+									</p>
+								</div>
+
 								<div class="p-2 bg-light text-end border-top">
 									<a :href="pdfUrl" target="_blank" class="btn btn-sm btn-dark">
-										<i class="bi bi-file-earmark-pdf me-1"></i>{{ $t('projectModal.popUp') }}
+										<i class="bi bi-file-earmark-pdf me-1"></i>
+										<span class="d-none d-md-inline">{{ $t('projectModal.popUp') }}</span>
+										<span class="d-md-none">{{ $t('projectModal.popUp') }}</span>
 									</a>
 								</div>
 							</div>
