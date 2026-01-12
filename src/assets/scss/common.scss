@@ -15,6 +15,26 @@
 	--global-light-gray-color: #F5F5F5;
 }
 
+$breakpoint-first: 1120px;
+$breakpoint-second: 992px;
+$breakpoint-third: 768px;
+
+html {
+	font-size: 100%;
+	
+	@media (max-width: $breakpoint-first) {
+		font-size: 95%;
+	}
+
+	@media (max-width: $breakpoint-second) {
+		font-size: 90%;
+	}
+
+	@media (max-width: $breakpoint-third) {
+		font-size: 80%;
+	}
+}
+
 body {
 	font-family: var(--font-main) !important;
 
