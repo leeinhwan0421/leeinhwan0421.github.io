@@ -330,9 +330,8 @@
 		},
 		"mainTasks": "주요 작업 내용",
 		"presentation": "포트폴리오 PPT",
-		"presentationPreview": "미리보기",
-		"presentationDescription": "모바일 환경에서는 파일 다운로드가 진행될 수 있습니다.",
-		"presentationLoad": "PDF 불러오기",
+		"presentationDownload": "포트폴리오 PPT 다운로드",
+		"presentationDescription": "모바일 기기에서는 PPT 파일을 다운로드하여 확인할 수 있습니다.",
 		"popUp": "새 탭에서 열기",
 		"review": "개발 후기",
 
