@@ -330,7 +330,9 @@
 		},
 		"mainTasks": "주요 작업 내용",
 		"presentation": "포트폴리오 PPT",
-		"mobilePdfDesc": "모바일 환경에서는 아래 버튼을 눌러\nPDF를 확인해주세요.",
+		"presentationPreview": "미리보기",
+		"presentationDescription": "모바일 환경에서는 파일 다운로드가 진행될 수 있습니다.",
+		"presentationLoad": "새 탭에서 열기",
 		"popUp": "새 탭에서 열기",
 		"review": "개발 후기",
 
