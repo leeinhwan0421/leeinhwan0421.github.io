@@ -2,13 +2,9 @@
 
 This project is a modern web application built with **Vue 3** and **Vite**.
 
----
-
 ## Project Links
 
-*	[Preview](https://leeinhwan0421.github.io)
-
----
+This page is officially hosted and available at [https://leeinhwan0421.github.io](https://leeinhwan0421.github.io)
 
 ## Getting Started
 
