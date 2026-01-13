@@ -6,7 +6,7 @@ This project is a modern web application built with **Vue 3** and **Vite**.
 
 ## Project Links
 
-*	**Live Demo:** [https://leeinhwan0421.github.io](https://leeinhwan0421.github.io)
+*	[Preview](https://leeinhwan0421.github.io)
 
 ---
 
