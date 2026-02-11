@@ -5,7 +5,7 @@
 	>
 		<div class="container">
 			<a class="navbar-brand fw-bold" href="#">
-				LIH's Portfolio
+				Lee In Hwan
 			</a>
 
 			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav">

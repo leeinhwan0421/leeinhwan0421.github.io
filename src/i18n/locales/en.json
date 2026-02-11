@@ -1,8 +1,341 @@
-
 {
 	"title": "Lee In Hwan Portfolio",
 	"masthead": {
-		"title": "sample title",
-		"subtitle": "sample subtitle"
+		"title": "- Lee In Hwan -\nClient Developer Portfolio",
+		"subtitle": "Greetings.\nI am Lee In Hwan, a client developer\nwho never shies away from new challenges.",
+		"button": "Learn More"
+	},
+
+	"about": {
+		"title": "ABOUT ME",
+		"info": {
+			"name": "Name",
+			"birth": "Date of Birth",
+			"address": "Location",
+			"phone": "Contact",
+			"email": "Email",
+			"education": "Education"
+		},
+		"values": {
+			"name": "Lee In Hwan",
+			"birth": "April 21, 2004",
+			"address": "Jung-gu, Seoul, S.Korea",
+			"phone": "010-7599-7749",
+			"email": "{'lsinhwan0421@gmail.com'}",
+			"education": "Suwon Technical High School\n(Digital Game Department)"
+		}
+	},
+
+	"awards": {
+		"title": "AWARDS",
+		"list": [
+			{
+				"date": "2022.09",
+				"title": "Silver Medal in Game Development, National Skills Competition",
+				"organization": "Global Skills Korea",
+				"description": "Awarded for developing a high-quality 2D local multiplayer puzzle platformer."
+			},
+			{
+				"date": "2022.09",
+				"title": "Unity Sponsorship Award",
+				"organization": "Unity Technologies Korea",
+				"description": "Received for creating a polished game utilizing the Unity engine at the National Skills Competition."
+			},
+			{
+				"date": "2022.04",
+				"title": "Gold Medal in Game Development, Regional Skills Competition",
+				"organization": "Gyeonggi-do Skills Competition Committee",
+				"description": "Awarded for the successful development of a 2D vertical-scrolling action shooter."
+			},
+			{
+				"date": "2021.06",
+				"title": "1st Webcash Group Scholarship for Vocational High Schools",
+				"organization": "Webcash Group, ETNews, KSHSA",
+				"description": "Selected as a recipient for outstanding academic performance and talent among vocational high school students."
+			},
+			{
+				"date": "2021.04",
+				"title": "Bronze Medal in Game Development, Regional Skills Competition",
+				"organization": "Gyeonggi-do Skills Competition Committee",
+				"description": "Awarded for developing a high-quality 2D puzzle arcade game."
+			}
+		]
+	},
+
+	"skills": {
+		"title": "SKILLS",
+		"main": {
+			"title": "Core Tech Stack",
+			"csharp": {
+				"name": "C#",
+				"desc": [
+					"Designing flexible and reusable architectures using Design Patterns",
+					"Maintaining consistent code conventions and writing highly readable code for collaboration",
+					"Selecting optimal data structures and implementing efficient logic tailored to data characteristics",
+					"Performing stable asynchronous programming based on Task and async/await",
+					"Designing flexible interfaces utilizing virtual and abstract classes",
+					"Optimizing memory efficiency considering Garbage Collector (GC) behavior"
+				]
+			},
+			"unity": {
+				"name": "Unity",
+				"desc": [
+					"Experienced with various libraries such as UniTask (Async) and UniRx (Reactive)",
+					"Experience in optimization techniques including LOD, Static Batching, and Occlusion Culling",
+					"Proficient in Unity-native tools like Cinemachine and Tilemap",
+					"Writing event-driven architectures using UnityEvent",
+					"Experience in Custom Editor Scripting to improve workflow productivity",
+					"Experience in building real-time multiplayer network environments using Photon Engine"
+				]
+			}
+		},
+		"sub": {
+			"title": "Secondary & Other Skills",
+			"items": [
+				{ 
+					"name": "C++", 
+					"desc": "Experience in utilizing Smart Pointers and implementing DX9 API features" 
+				},
+				{ 
+					"name": "Database & Server", 
+					"desc": "Experience in MySQL query optimization and collaboration with Spring Boot backends" 
+				},
+				{ 
+					"name": "Tools", 
+					"desc": "Collaboration using Git / Plastic SCM and experience in Vue.js frontend development" 
+				}
+			]
+		},
+		"certifications": {
+			"title": "CERTIFICATIONS",
+			"items": [
+				{ 
+					"name": "Unity Associate: Game Developer", 
+					"organization": "Unity Technologies",
+					"date": "2022.10" 
+				},
+				{ 
+					"name": "Craftsman Information Processing", 
+					"organization": "HRD Service of Korea",
+					"date": "2022.05" 
+				},
+				{ 
+					"name": "Craftsman Computer Graphics Operation", 
+					"organization": "HRD Service of Korea",
+					"date": "2022.05" 
+				}
+			]
+		}
+	},
+
+	"projects": {
+		"title": "PROJECTS",
+		"focusMajor": "View Featured Projects",
+		"details": "View Details",
+
+		"items": [
+			{
+				"id": "virus-striker",
+				"featured": true,
+				"hasPdf": true,
+				"title": "Virus Striker",
+				"period": "2021.04 - 2021.05",
+				"category": "DirectX 9",
+				"shortDesc": "A DirectX 9-based action puzzle game submitted to the 2021 Regional Skills Competition",
+				"tags": ["C++", "DirectX 9", "WinAPI"],
+				"details": {
+					"description": "An action puzzle game in the style of Qix, reminiscent of the arcade classic 'Gals Panic.' Based on the theme 'Eradicate the Virus!', players control a Vaccine Injection Machine (VIM) to treat infected tissue. The core mechanism uses a FloodFill algorithm where players must fill a certain percentage of the map to clear the stage, avoiding pathogens that increase in difficulty over time.",
+					"specs": {
+						"environment": "DirectX 9 June 2010 SDK, Visual Studio",
+						"members": "3 (3 Programmers)",
+						"role": "Responsible for DirectX 9 framework and core game system development"
+					},
+					"keyFeatures": [
+						"Designed and implemented a 2D rendering engine framework based on DirectX 9",
+						"Implemented foundational game engine systems: Animation, Box/Circle Collision, Sound",
+						"Implemented texture masking using 2D array data to distinguish infected and treated areas",
+						"Implemented FloodFill algorithm for area clearing based on 2D array data",
+						"Developed a system to parse A-Z, 0-9 sprite sheets to output text without external fonts",
+						"Implemented ranking data I/O system via txt files"
+					],
+					"review": "'Virus Striker' was the first game I created while learning C and C++ in high school. This project is more than just a competition entry; it was my gateway into the world of game development. By handling everything from 2D rendering to collision and animation using DirectX APIs, I gained a practical understanding of game frameworks and engines. This foundation was immensely helpful when I later moved to Unity. Looking back, it reflects my pure passion and challenging spirit at the time."
+				},
+				"links": {
+					"github": "https://github.com/leeinhwan0421/VIRUS_STRIKER",
+					"youtube": "https://www.youtube.com/watch?v=5EcX5imVGHo"
+				}
+			},
+			{
+				"id": "corona-striker",
+				"featured": false,
+				"hasPdf": true,
+				"title": "Corona Striker",
+				"period": "2022.03 - 2022.04",
+				"category": "Unity",
+				"shortDesc": "A vertical-scrolling action shooter submitted to the 2022 Regional Skills Competition",
+				"tags": ["Unity", "2D", "Built-in"],
+				"details": {
+					"description": "A vertical-scrolling action shooter similar to Strikers 1945. Set inside a patient's body, the player controls a vaccine robot to fight viruses. It features a unique mechanic where players must manage both the robot's health and the patient's pain gauge simultaneously.",
+					"specs": {
+						"environment": "Unity 2022.3.28f1",
+						"members": "Solo (1 Programmer)",
+						"role": "Handled all aspects of development"
+					},
+					"keyFeatures": [
+						"Implemented skills (Charge Shot) using Bezier Curves",
+						"Developed seamless background scrolling using alternating tiles",
+						"Configured monster patterns through 2D array data editable in the Unity Inspector",
+						"Implemented hit detection and item acquisition logic using Collision handling"
+					],
+					"review": "This was my first Unity project after learning DirectX. My prior experience with graphic APIs greatly helped in understanding how Unity works under the hood. While I reused assets due to the competition's prompt being similar to my previous work, I felt some lack of detail in certain areas. Looking at the code now, I see many points for improvement in terms of design and hardcoding, making it a project I'd like to remaster someday."
+				},
+				"links": {
+					"github": "https://github.com/leeinhwan0421/Corona_Striker",
+					"youtube": "https://www.youtube.com/watch?v=PHmythXdy-I"
+				}
+			},
+			{
+				"id": "samchuk-adventure",
+				"featured": true,
+				"hasPdf": true,
+				"title": "Samchuk Adventure",
+				"period": "2022.06 - 2022.08",
+				"category": "Unity",
+				"shortDesc": "A side-scrolling platformer created with Unity for a school performance assessment",
+				"tags": ["Unity", "2D", "URP"],
+				"details": {
+					"description": "A classic 2D side-scrolling action-adventure game. Players explore forests, dungeons, and caves, utilizing various combat styles including swords, spears, bows, and dodge rolls. It includes growth elements like equipment enhancement and shops, leading to a final boss fight and ending.",
+					"specs": {
+						"environment": "Unity 2022.3.41f1",
+						"members": "4 (2 Designers, 1 Map/Presenter, 1 Programmer)",
+						"role": "Responsible for Graphics Pipeline, game mechanics implementation, and internal tool support"
+					},
+					"keyFeatures": [
+						"Implemented a system to swap Animators at runtime based on the equipped weapon",
+						"Utilized URP 2D Light features for atmospheric thematic lighting",
+						"Implemented camera movement using Cinemachine",
+						"Developed equipment enhancement, shop, and dialogue UI using UGUI",
+						"Applied Rule Tiles and Gizmos to enhance efficiency in level design"
+					],
+					"review": "This project marked my transition from the Built-in pipeline to URP. Despite initial hurdles like 'pink texture' bugs, the visual improvement was highly rewarding. It was also my first time collaborating with non-programmers, where I took the lead in schedule management and role distribution. Our project was recognized as the highest quality among the competing teams, and the experience of applying new features in a short timeframe was invaluable."
+				},
+				"links": {
+					"github": "https://github.com/leeinhwan0421/samchuk_adventure",
+					"youtube": "https://www.youtube.com/watch?v=LQu5gajauW4"
+				}
+			},
+			{
+				"id": "lowpoly-battlefield",
+				"featured": false,
+				"hasPdf": false,
+				"title": "LowPoly Battlefield",
+				"period": "2024.05 - 2024.06",
+				"category": "Unity",
+				"shortDesc": "A Low-poly FPS project focused on building 3D development knowledge",
+				"tags": ["Unity", "3D", "URP"],
+				"details": {
+					"description": "A learning-oriented project to master 3D systems. Focused on customizing external animation assets and exploring Animation Rigging, Animation Curves, and other 3D-specific functionalities.",
+					"specs": {
+						"environment": "Unity 2022.3.22f1",
+						"members": "Solo (1 Programmer)",
+						"role": "Handled all aspects of development"
+					},
+					"keyFeatures": [
+						"Implemented gun firing effects using the Particle System",
+						"Developed surface-dependent footstep sounds detected via Raycasting",
+						"Implemented reverb and soundproofing effects based on the environment",
+						"Developed a JSON-based I/O system for saving customizations"
+					],
+					"review": "Although it ended at the prototype stage due to technical hurdles in complex 3D mechanics and asset optimization, it was a period of significant growth. I delved deep into IK-based animation correction and FPS fundamentals, which significantly increased my 3D system comprehension."
+				},
+				"links": {
+					"github": "",
+					"youtube": "https://www.youtube.com/watch?v=35TJEjCdagI"
+				}
+			},
+			{
+				"id": "twin-travelers",
+				"featured": true,
+				"hasPdf": true,
+				"title": "Twin Travelers",
+				"period": "2024.09 - 2024.12",
+				"category": "Unity",
+				"shortDesc": "A 2D co-op puzzle platformer remaster of the 2022 National Skills Competition entry",
+				"tags": ["Unity", "2D", "URP", "Multiplayer"],
+				"details": {
+					"description": "A co-op puzzle platformer similar to Fireboy & Watergirl. Players use mechanics like keys, levers, and gravity portals to clear 50 stages. Supports both a single-player mode (controlling two characters) and real-time network co-op.",
+					"specs": {
+						"environment": "Unity 2022.3.45f1, Photon Engine",
+						"members": "Solo (1 Programmer)",
+						"role": "Handled all aspects of development"
+					},
+					"keyFeatures": [ 
+						"Implemented lag compensation by inheriting Photon PUN2's IPunObservable interface", 
+						"Developed multiplayer features using Photon PUN2 RPCs and Callbacks", 
+						"Managed active sound effects using Object Pooling", 
+						"Managed BGM/SFX lists as Dictionaries using ScriptableObjects", 
+						"Implemented HDR and Outline effects using Shader Graph", 
+						"Enhanced level design efficiency using Rule Tiles and Gizmos" 
+					],
+					"review": "This was my most ambitious project, reflecting my renewed passion for game development. Successfully implementing a multiplayer system with Photon PUN2 was a personal milestone, especially after struggling with various networking solutions in previous attempts. Moving forward, I plan to incorporate UniTask and UniRx for even better event-driven performance."
+				},
+				"links": {
+					"github": "https://github.com/leeinhwan0421/Twin-Travelers",
+					"youtube": "https://www.youtube.com/watch?v=L-SwHIiYgvA"
+				}
+			},
+			{
+				"id": "sokoland",
+				"featured": true,
+				"hasPdf": true,
+				"title": "Sokoland",
+				"period": "2025.1 - 2025.3",
+				"category": "Unity",
+				"shortDesc": "A 3D reimagining of the classic Sokoban puzzle platformer",
+				"tags": ["Unity", "3D", "URP"],
+				"details": {
+					"description": "A 3D puzzle platformer based on Sokoban mechanics. Players use portals, ladders, and camera rotations to place boxes in designated spots. The game is designed to challenge spatial awareness through varying themes and complex camera-dependent puzzles.",
+					"specs": {
+						"environment": "Unity 6000.0.31f1",
+						"members": "3 (1 Designer, 2 Programmers)",
+						"role": "Client Development, Level Design, Code Convention/Doc-style setup, and Project Management"
+					},
+					"keyFeatures": [
+						"Implemented player movement and Game Over logic via UniTask and UniRx (Event-driven/Async)",
+						"Developed a structured data flow: Theme Data → Level Data → Save Data",
+						"Performed per-scene optimization and lighting (Static Batching / Baked Lighting)",
+						"Implemented camera rotation using Cinemachine",
+						"Developed custom editor scripts for auto-header insertion and per-camera screenshots"
+					],
+					"review": "A great experience exploring collaboration tools and advanced Unity features. Managing version control via GitHub and overseeing the development workflow taught me what is truly required for professional teamwork. Successfully navigating the 'pain of creation' in level design while maintaining the schedule was a rewarding challenge."
+				},
+				"links": {
+					"github": "",
+					"youtube": ""
+				}
+			}
+		]
+	},
+
+	"projectModal": {
+		"close": "Close",
+		"description": "Project Description",
+		"devleopmentSpecs": {
+			"title": "Development Specs & Role",
+			"environment": "Environment",
+			"rule": "Role",
+			"members": "Team Size"
+		},
+		"mainTasks": "Key Features & Tasks",
+		"presentation": "Portfolio PPT",
+		"presentationDownload": "Download Portfolio PPT",
+		"presentationDescription": "On mobile devices, please download the PPT file to view.",
+		"popUp": "Open in New Tab",
+		"review": "Post-Mortem / Review",
+		"browsing": {
+			"title": "Project Media",
+			"video": "Gameplay Video",
+			"source": "Source Code"
+		}
 	}
 }
