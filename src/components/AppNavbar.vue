@@ -26,7 +26,7 @@
 								class="btn-lang" 
 								:class="{ active: locale === 'ko' }" 
 								@click="changeLang('ko')"
-							>KO</button>
+							>한국어</button>
 							<span class="divider">|</span>
 							<button 
 								class="btn-lang" 
